@@ -1,0 +1,21 @@
+data/*.csv
+data/*.xlsx
+*.zip
+
+# Database credentials
+config.ini
+.env
+credentials.json
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
