@@ -1,0 +1,5 @@
+"stage","orders","conversion_rate_pct","drop_off_rate_pct"
+"1. Order Placed",98207,100.00,0.00
+"2. Order Approved",98188,99.98,0.01
+"3. Order Shipped",97583,99.36,0.63
+"4. Order Delivered",96470,98.23,1.76

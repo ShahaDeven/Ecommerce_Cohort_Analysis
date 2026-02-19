@@ -1,0 +1,6 @@
+"clv_segment","customer_count","pct_of_customers","total_revenue","pct_of_revenue","avg_clv","avg_orders"
+"1. VIP (Top 5%)",4752,5.00,7174748.11,35.40,1509.84,1.13
+"2. High Value (Top 10%)",4751,5.00,2438017.59,12.03,513.16,1.09
+"3. Medium-High (Top 25%)",14256,15.00,3962382.12,19.55,277.94,1.07
+"4. Medium (Top 50%)",23758,25.00,3598464.92,17.76,151.46,1.03
+"5. Low Value (Bottom 50%)",47511,50.00,3091195.74,15.25,65.06,1.01
