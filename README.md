@@ -70,7 +70,6 @@ This project analyzes 2 years of e-commerce transactional data (95,000 customers
 ecommerce-cohort-analysis/
 │
 ├── README.md                           # Project documentation (you are here)
-├── CHALLENGES_AND_SOLUTIONS.md         # Technical challenges I solved
 ├── .gitignore                          # Excludes data files and credentials
 │
 ├── data/
@@ -90,16 +89,8 @@ ecommerce-cohort-analysis/
 │   ├── 06_clv_segmentation.sql         # CLV calculation, RFM segmentation
 │   └── 07_business_insights.sql        # Executive summary & recommendations
 │
-├── docs/
-│   ├── methodology.md                  # My analytical approach (first-person)
-│   └── business_recommendations.md     # Professional business memo format
-│
 └── visualizations/
     ├── dashboard_preview.png           # Full dashboard screenshot
-    ├── funnel_chart.png
-    ├── revenue_trend.png
-    ├── clv_distribution.png
-    └── cohort_heatmap.png
 ```
 
 ---
