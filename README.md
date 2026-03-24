@@ -118,6 +118,8 @@ dbt docs serve       # View interactive documentation
 ```
 ecommerce-cohort-analysis/
 │
+├── README.md                           # Project documentation (you are here)
+├── .gitignore                          # Excludes data files and credentials
 ├── README.md                           # Project overview (you are here)
 ├── CHALLENGES_AND_SOLUTIONS.md         # 8 technical challenges solved
 │
@@ -144,9 +146,23 @@ ecommerce-cohort-analysis/
 ├── data/
 │   ├── README.md                       # Dataset information
 │   └── exports/                        # CSV exports for Tableau
+│       ├── funnel_data.csv
+│       ├── cohort_retention.csv
+│       ├── clv_segments.csv
+│       └── monthly_revenue.csv
+│
+├── sql/
+│   ├── 01_create_schema.sql            # Database schema (6 tables, indexes, constraints)
+│   ├── 02_load_data.sql                # CSV import script
+│   ├── 03_data_exploration.sql         # EDA - customer overview, revenue, delivery
+│   ├── 04_funnel_analysis.sql          # Funnel conversion, drop-off, segmentation
+│   ├── 05_cohort_analysis.sql          # Retention matrix, repeat purchase behavior
+│   ├── 06_clv_segmentation.sql         # CLV calculation, RFM segmentation
+│   └── 07_business_insights.sql        # Executive summary & recommendations
 │
 │
 └── visualizations/
+    ├── dashboard_preview.png           # Full dashboard screenshot
     ├── dashboard_preview.png
     ├── customer_cohorts_details.png
     └── customer_lifetime_value_dag.png
