@@ -368,20 +368,9 @@ GROUP BY segment;
 
 ---
 
-## 📫 Contact
-
-**Deven Shah**  
-📧 your.email@example.com  
-💼 [LinkedIn](https://linkedin.com/in/yourprofile)  
-🐙 [GitHub](https://github.com/yourusername)
-
----
-
 ## 🙏 Acknowledgments
 
 - Dataset: [Olist](https://olist.com/) via [Kaggle](https://www.kaggle.com/olistbr)
 - Inspired by real-world e-commerce analytics challenges
 
 ---
-
-*Last updated: March 2026 | Status: Complete ✅*
