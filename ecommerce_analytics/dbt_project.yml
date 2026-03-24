@@ -1,0 +1,48 @@
+name: 'ecommerce_analytics'
+version: '1.0.0'
+config-version: 2
+
+# Project profile (references profiles.yml)
+profile: 'ecommerce_analytics'
+
+# Directories
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+# Model configurations
+models:
+  ecommerce_analytics:
+    # Staging models - views for raw data access
+    staging:
+      +materialized: view
+      +schema: staging
+      
+    # Intermediate models - business logic transformations
+    intermediate:
+      +materialized: view
+      +schema: intermediate
+      
+    # Marts - final analytics tables
+    marts:
+      +materialized: table
+      +schema: marts
+      
+    # Core metrics
+    metrics:
+      +materialized: table
+      +schema: metrics
+
+# Seeds configuration
+seeds:
+  ecommerce_analytics:
+    +schema: seeds
+
