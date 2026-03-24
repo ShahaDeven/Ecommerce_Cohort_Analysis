@@ -7,7 +7,7 @@
 [![Tableau](https://img.shields.io/badge/Tableau-E97627?style=flat&logo=tableau&logoColor=white)](https://public.tableau.com)
 [![Status](https://img.shields.io/badge/Status-Complete-success)](https://github.com/yourusername/ecommerce-cohort-analysis)
 
-**[📊 View Tableau Dashboard](https://public.tableau.com/app/profile/deven.shah/viz/ecommerce_dashboard_17713560412650/AnalysisDashboard)**
+**[📊 View Tableau Dashboard](https://public.tableau.com/app/profile/deven.shah/viz/ecommerce_dashboard_17713560412650/AnalysisDashboard)** 
 
 ---
 
@@ -31,7 +31,7 @@ End-to-end e-commerce analytics project analyzing 2 years of transactional data 
 
 ### Pipeline Architecture
 
-![dbt Lineage Graph](visualizations\customer_lifetime_value_dag.png)
+![dbt Lineage Graph](visualizations/customer_lifetime_value_dag.png)
 
 ```
 Raw Sources → Staging (clean) → Intermediate (enrich) → Marts (analytics)
@@ -118,10 +118,7 @@ dbt docs serve       # View interactive documentation
 ```
 ecommerce-cohort-analysis/
 │
-├── README.md                           # Project documentation (you are here)
-├── .gitignore                          # Excludes data files and credentials
 ├── README.md                           # Project overview (you are here)
-├── CHALLENGES_AND_SOLUTIONS.md         # 8 technical challenges solved
 │
 ├── ecommerce_analytics/                # dbt project
 │   ├── models/
@@ -146,27 +143,11 @@ ecommerce-cohort-analysis/
 ├── data/
 │   ├── README.md                       # Dataset information
 │   └── exports/                        # CSV exports for Tableau
-│       ├── funnel_data.csv
-│       ├── cohort_retention.csv
-│       ├── clv_segments.csv
-│       └── monthly_revenue.csv
-│
-├── sql/
-│   ├── 01_create_schema.sql            # Database schema (6 tables, indexes, constraints)
-│   ├── 02_load_data.sql                # CSV import script
-│   ├── 03_data_exploration.sql         # EDA - customer overview, revenue, delivery
-│   ├── 04_funnel_analysis.sql          # Funnel conversion, drop-off, segmentation
-│   ├── 05_cohort_analysis.sql          # Retention matrix, repeat purchase behavior
-│   ├── 06_clv_segmentation.sql         # CLV calculation, RFM segmentation
-│   └── 07_business_insights.sql        # Executive summary & recommendations
-│
 │
 └── visualizations/
-    ├── dashboard_preview.png           # Full dashboard screenshot
     ├── dashboard_preview.png
     ├── customer_cohorts_details.png
     └── customer_lifetime_value_dag.png
-
 ```
 
 ---
@@ -271,13 +252,15 @@ ecommerce-cohort-analysis/
 4. **UNION column mismatch** → Separated into distinct queries
 5. **Query performance** → Window functions instead of correlated subqueries
 
+**[Full technical details →](CHALLENGES_AND_SOLUTIONS.md)**
+
 ---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 - PostgreSQL 15+
-- Python 3.11+
+- Python 3.8+
 - dbt-postgres
 
 ### Installation
@@ -385,9 +368,20 @@ GROUP BY segment;
 
 ---
 
+## 📫 Contact
+
+**Deven Shah**  
+📧 your.email@example.com  
+💼 [LinkedIn](https://linkedin.com/in/yourprofile)  
+🐙 [GitHub](https://github.com/yourusername)
+
+---
+
 ## 🙏 Acknowledgments
 
 - Dataset: [Olist](https://olist.com/) via [Kaggle](https://www.kaggle.com/olistbr)
 - Inspired by real-world e-commerce analytics challenges
 
 ---
+
+*Last updated: March 2026 | Status: Complete ✅*
